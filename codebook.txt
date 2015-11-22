@@ -1,0 +1,29 @@
+Getting and Cleaning Data - Week 3 - Course Project
+Coursera - Data Science
+
+CodeBook
+
+Datasets used in the run_analysis.R file
+-------------------------------------------------------------------
+X_test = 2947 observations of 561 variables that capture the results of test for a fraction of the 30 subjects
+Y_test = 2947 observations of 1 variable that captures the activity performed by each test subject
+X_train = 7352 observations of 561 variables that capture the results of training for a fraction of the 30 subjects
+Y_train = 7352 observations of 1 variable that captures the activity performed by each training subject
+activity_labels = 6 observations of 2 variables providing the number and the activity associated with it
+features = 561 observations of the types of each of the X_test and X_train variables
+ 
+DF_test = data frame of test variables and observations
+DF_train = data frame of the training variables and observations
+
+DF = merged data frame of DF_test and DF_train
+DF_trim = trimmed version of the DF data frame, with only columns that contain mean and std variables
+
+averages = 180 observations of 68 variables that provide the calculated averages for each observation in the DF_trim data frame
+-------------------------------------------------------------------
+Variables in the averages.txt file
+
+subject - the umber for each of the 30 subjects
+activity - the activity performed by the subject
+
+Other variables in the file (66 columns)
+"tBodyAcc-mean()-X" "tBodyAcc-mean()-Y" "tBodyAcc-mean()-Z" "tBodyAcc-std()-X" "tBodyAcc-std()-Y" "tBodyAcc-std()-Z" "tGravityAcc-mean()-X" "tGravityAcc-mean()-Y" "tGravityAcc-mean()-Z" "tGravityAcc-std()-X" "tGravityAcc-std()-Y" "tGravityAcc-std()-Z" "tBodyAccJerk-mean()-X" "tBodyAccJerk-mean()-Y" "tBodyAccJerk-mean()-Z" "tBodyAccJerk-std()-X" "tBodyAccJerk-std()-Y" "tBodyAccJerk-std()-Z" "tBodyGyro-mean()-X" "tBodyGyro-mean()-Y" "tBodyGyro-mean()-Z" "tBodyGyro-std()-X" "tBodyGyro-std()-Y" "tBodyGyro-std()-Z" "tBodyGyroJerk-mean()-X" "tBodyGyroJerk-mean()-Y" "tBodyGyroJerk-mean()-Z" "tBodyGyroJerk-std()-X" "tBodyGyroJerk-std()-Y" "tBodyGyroJerk-std()-Z" "tBodyAccMag-mean()" "tBodyAccMag-std()" "tGravityAccMag-mean()" "tGravityAccMag-std()" "tBodyAccJerkMag-mean()" "tBodyAccJerkMag-std()" "tBodyGyroMag-mean()" "tBodyGyroMag-std()" "tBodyGyroJerkMag-mean()" "tBodyGyroJerkMag-std()" "fBodyAcc-mean()-X" "fBodyAcc-mean()-Y" "fBodyAcc-mean()-Z" "fBodyAcc-std()-X" "fBodyAcc-std()-Y" "fBodyAcc-std()-Z" "fBodyAccJerk-mean()-X" "fBodyAccJerk-mean()-Y" "fBodyAccJerk-mean()-Z" "fBodyAccJerk-std()-X" "fBodyAccJerk-std()-Y" "fBodyAccJerk-std()-Z" "fBodyGyro-mean()-X" "fBodyGyro-mean()-Y" "fBodyGyro-mean()-Z" "fBodyGyro-std()-X" "fBodyGyro-std()-Y" "fBodyGyro-std()-Z" "fBodyAccMag-mean()" "fBodyAccMag-std()" "fBodyBodyAccJerkMag-mean()" "fBodyBodyAccJerkMag-std()" "fBodyBodyGyroMag-mean()" "fBodyBodyGyroMag-std()" "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()"
